@@ -1,8 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Queue;
-
+import java.util.*;
 public class BinaryTrees {
     static class Node {
         int data;
@@ -35,6 +31,7 @@ public class BinaryTrees {
             this.root = root;
         }
     }
+    
     static class BinaryTree {
         static int idx = -1;
         public static Node buildTree(int nodes[]){
