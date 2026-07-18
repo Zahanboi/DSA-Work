@@ -181,7 +181,7 @@ class Graphs{
 
         public void topologicalSort(){// only for directed acyclic graph if call for cyclic graph then it will give wrong answer or will go into infinite loop there is no concept of topological sort for cyclic graph because there is no order of execution for cyclic graph
             boolean[] visited = new boolean[adj.size()];
-            Stack<Integer> stack = new Stack<>();
+            java.util.Stack<Integer> stack = new java.util.Stack<>();
             for(int i = 0; i<adj.size(); i++){
                 if(!visited[i]){
                     topologicalSortUtil(i, visited, stack);// dfs
@@ -192,7 +192,7 @@ class Graphs{
             }
         }
 
-        public void topologicalSortUtil(int node, boolean[] visited, Stack<Integer> stack){
+        public void topologicalSortUtil(int node, boolean[] visited, java.util.Stack<Integer> stack){
             visited[node] = true;
             for(int i = 0; i<adj.get(node).size(); i++){
                 if(!visited[adj.get(node).get(i)]){

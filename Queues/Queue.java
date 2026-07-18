@@ -1,4 +1,3 @@
-import java.util.Stack;
 import java.util.*;
 
 public class Queue { // q2 is an interface in JCF so can define it by linkedlist or ArrayDeque class they have differences arraydeque is faster because it uses array implementation which stores on basis of addresses and ll creates new objs on connections
@@ -42,8 +41,8 @@ public class Queue { // q2 is an interface in JCF so can define it by linkedlist
     //for circular queues update front and rear as front = (front + 1) % capacity and rear = (rear + 1) % capacity
 
     public void queueUsingStack() {
-        Stack<Integer> stack1 = new Stack<>();
-        Stack<Integer> stack2 = new Stack<>();
+        java.util.Stack<Integer> stack1 = new java.util.Stack<>();
+        java.util.Stack<Integer> stack2 = new java.util.Stack<>();
 
         // Enqueue operation
         for (int i = 1; i <= 5; i++) {

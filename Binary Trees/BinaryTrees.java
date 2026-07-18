@@ -76,7 +76,7 @@ public class BinaryTrees {
         }
 
         void levelOrder(Node root){
-            Queue<Node> q = new LinkedList<>();
+            java.util.Queue<Node> q = new java.util.LinkedList<>();
             Node currNode = root;
             q.add(currNode);
             q.add(null);//important line indicated level over |1,null,2,3,null.. so on each node queue se nikalte me will add there children 
@@ -178,7 +178,7 @@ public class BinaryTrees {
         }
         
         HashMap<Integer,Node> levelOrderModi(Node root, HashMap<Integer,Node> hm){
-            Queue<Pair> q = new LinkedList<>();
+            java.util.Queue<Pair> q = new java.util.LinkedList<>();
             int currDiameter = 0;
             Node currNode = root;
             q.add(new Pair(currDiameter, root));
