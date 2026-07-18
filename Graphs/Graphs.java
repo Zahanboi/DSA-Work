@@ -1,5 +1,5 @@
 import java.util.*;
-
+import java.util.Stack;
 class Graphs{
     public class graphInit{
         public class Edge{
@@ -76,7 +76,7 @@ class Graphs{
 
         public void bfs(){
             boolean[] visited = new boolean[adj.size()];
-            Queue<Integer> queue = new LinkedList<>();
+            java.util.Queue<Integer> queue = new java.util.LinkedList<>();
             queue.add(0);
             while(queue.size() > 0){
                 int node = queue.poll();
@@ -214,7 +214,7 @@ class Graphs{
             }// cannot just use this order since some can have same indegrees and we need to know which comes in which order so we traverse the graph 
             
             // 2. Queue to store nodes with an in-degree of 0
-            Queue<Integer> queue = new LinkedList<>();
+            java.util.Queue<Integer> queue = new java.util.LinkedList<>();
             for (int i = 0; i < n; i++) {
                 if (inDegree[i] == 0) {
                     queue.offer(i);
